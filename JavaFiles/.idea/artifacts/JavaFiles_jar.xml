@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaFiles:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaFiles_jar</output-path>
+    <root id="archive" name="JavaFiles.jar">
+      <element id="module-output" name="JavaFiles" />
+      <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-11.0.2/javafx/src.zip" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-11.0.2/javafx/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-11.0.2/javafx/javafx.web.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-11.0.2/javafx/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-11.0.2/javafx/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-11.0.2/javafx/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-11.0.2/javafx/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-11.0.2/javafx/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/javafx-sdk-11.0.2/javafx/javafx.graphics.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,15 @@
+.bodybg{
+    -fx-background-image: url('../GUI-ideas-images/Background1.jpg');
+    -fx-background-size: 100% 100%;
+}
+
+.titleText{
+    -fx-graphic: url('../GUI-ideas-images/TitleTextResize.png');
+    -fx-graphic-size: 200px 50px;
+}
+
+.button{
+    -fx-text-fill: rgb(0,0,0);
+    -fx-border-color: rgb(0,128,0);
+    -fx-border-width: 3;
+}

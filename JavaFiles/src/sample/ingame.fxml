@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="1000.0" styleClass="bodybg" stylesheets="@inGameStyle.css" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerIngame">
+   <children>
+      <Label fx:id="scoreLabel" layoutX="90.0" layoutY="138.0" prefHeight="27.0" prefWidth="83.0" text="Score: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="timerLabel" layoutX="90.0" layoutY="160.0" prefHeight="27.0" prefWidth="83.0" text="Time: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="timerNum" layoutX="173.0" layoutY="160.0" prefHeight="24.0" prefWidth="83.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreNum" layoutX="173.0" layoutY="138.0" prefHeight="24.0" prefWidth="83.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="wordNum" layoutX="785.0" layoutY="138.0" prefHeight="27.0" prefWidth="144.0" text="Word 1 of 5" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="guess" alignment="CENTER" layoutX="299.0" layoutY="269.0" onAction="#enterKeyCheck" prefHeight="45.0" prefWidth="242.0" promptText="Enter Your Guess Here" style="-fx-text-fill: WHITE" styleClass="textBox" stylesheets="@inGameStyle.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="help" layoutX="99.0" layoutY="7.0" mnemonicParsing="false" onAction="#showHelp" prefHeight="35.0" prefWidth="72.0" style="-fx-border-color: #008000f0" text="Help">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="99.0" layoutY="51.0" mnemonicParsing="false" onAction="#goBack" prefHeight="35.0" prefWidth="72.0" style="-fx-border-color: #008000f0" text="Back" textFill="#000000f0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="typeWordLabel" alignment="CENTER" layoutX="228.0" layoutY="146.0" prefHeight="63.0" prefWidth="545.0" text="Type the Word Below " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="repeat" contentDisplay="GRAPHIC_ONLY" layoutX="173.0" layoutY="385.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#repeatWord" prefHeight="110.0" prefWidth="110.0" styleClass="repeatButton" stylesheets="@inGameStyle.css" />
+      <Label fx:id="repeatWordLabel" alignment="CENTER" layoutX="151.0" layoutY="495.0" prefHeight="27.0" prefWidth="155.0" text="Repeat Word" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="dontKnow" layoutX="446.0" layoutY="385.0" mnemonicParsing="false" onAction="#dialogBoxMessage" prefHeight="110.0" prefWidth="110.0" styleClass="dontKnowButton" stylesheets="@inGameStyle.css" text="?">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Button>
+      <Label fx:id="dontKnowLabel" alignment="CENTER" layoutX="423.0" layoutY="495.0" prefHeight="27.0" prefWidth="155.0" text="Don't Know" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="752.0" layoutY="406.0" styleClass="speedImage" stylesheets="@inGameStyle.css" />
+      <Label fx:id="speed" alignment="CENTER" layoutX="675.0" layoutY="495.0" prefHeight="27.0" prefWidth="220.0" text="Speed: Normal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="slower" alignment="CENTER" layoutX="687.0" layoutY="408.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#slowDown" prefHeight="65.0" prefWidth="65.0" scaleShape="false" text="-" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="faster" alignment="CENTER" layoutX="817.0" layoutY="408.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#speedUp" prefHeight="65.0" prefWidth="65.0" scaleShape="false" text="+" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="submitButton" layoutX="562.0" layoutY="274.0" mnemonicParsing="false" onAction="#submitClicked" prefHeight="29.0" prefWidth="110.0" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="hint" layoutX="110.0" layoutY="270.0" prefHeight="79.0" prefWidth="220.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="315.0" layoutY="322.0" mnemonicParsing="false" onAction="#macronA" prefHeight="53.0" prefWidth="53.0" text="ā" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button layoutX="386.0" layoutY="322.0" mnemonicParsing="false" onAction="#macronE" prefHeight="53.0" prefWidth="53.0" text="ē" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button layoutX="599.0" layoutY="322.0" mnemonicParsing="false" onAction="#macronU" prefHeight="53.0" prefWidth="53.0" text="ū" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button layoutX="528.0" layoutY="322.0" mnemonicParsing="false" onAction="#macronO" prefHeight="53.0" prefWidth="53.0" text="ō" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button layoutX="457.0" layoutY="322.0" mnemonicParsing="false" onAction="#macronI" prefHeight="53.0" prefWidth="53.0" text="ī" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+      <Label fx:id="numLetters" alignment="CENTER" layoutX="290.0" layoutY="223.0" prefHeight="45.0" prefWidth="420.0" text="-------------------------------" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="numLettersInWords" alignment="CENTER" layoutX="671.0" layoutY="269.0" prefHeight="45.0" prefWidth="250.0" text="There is X letters" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainMenu" prefHeight="560.0" prefWidth="1000.0" styleClass="bodybg" stylesheets="@rewardPageStyle.css" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RewardPage">
+   <children>
+      <Label alignment="CENTER" layoutX="164.0" layoutY="158.0" text="You've reached the end of the practice!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" alignment="CENTER" layoutX="331.0" layoutY="206.0" prefHeight="41.0" prefWidth="338.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="messagePractise" alignment="CENTER" layoutX="323.0" layoutY="227.0" text="Excellent practicing!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageMaori" alignment="CENTER" layoutX="438.0" layoutY="260.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="playAgain" layoutX="392.0" layoutY="312.0" mnemonicParsing="false" onAction="#playAgain" prefHeight="66.0" prefWidth="214.0" text="Play Again" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="409.0" layoutY="461.0" mnemonicParsing="false" onAction="#quit" prefHeight="60.0" prefWidth="180.0" text="Quit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnMenu" layoutX="389.0" layoutY="386.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="66.0" prefWidth="221.0" text="Main Menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

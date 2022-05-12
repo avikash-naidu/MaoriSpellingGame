@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="1000.0" styleClass="bodybg" stylesheets="@topicPage.css" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TopicSelection">
+   <children>
+      <Button id="backButton" fx:id="back" layoutX="89.0" layoutY="135.0" mnemonicParsing="false" onAction="#returnHome" prefHeight="47.0" prefWidth="160.0" text="whakahoki" textFill="#fffffff0">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="engineering" layoutX="632.0" layoutY="443.0" mnemonicParsing="false" onAction="#quizEngineering" prefHeight="73.0" prefWidth="172.0" text="Pūkaha" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="compass" layoutX="417.0" layoutY="282.0" mnemonicParsing="false" onAction="#quizCompass" prefHeight="73.0" prefWidth="172.0" text="Kāpehu" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="feelings" layoutX="632.0" layoutY="282.0" mnemonicParsing="false" onAction="#quizFeelings" prefHeight="73.0" prefWidth="172.0" text="Whīra" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="software" layoutX="632.0" layoutY="363.0" mnemonicParsing="false" onAction="#quizSoftware" prefHeight="73.0" prefWidth="172.0" text="Pūmanawa" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="uni" layoutX="206.0" layoutY="282.0" mnemonicParsing="false" onAction="#quizUni" prefHeight="73.0" prefWidth="172.0" text="Whare Wānanga" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="weather" layoutX="206.0" layoutY="443.0" mnemonicParsing="false" onAction="#quizWeather" prefHeight="73.0" prefWidth="172.0" text="Huarere" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="weekdays" layoutX="318.0" layoutY="196.0" mnemonicParsing="false" onAction="#quizWeekdays" prefHeight="73.0" prefWidth="172.0" text="   Wiki    Native Words" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="colours" layoutX="419.0" layoutY="443.0" mnemonicParsing="false" onAction="#quizColours" prefHeight="73.0" prefWidth="172.0" text="Kakano" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="babies" layoutX="206.0" layoutY="363.0" mnemonicParsing="false" onAction="#quizBabies" prefHeight="73.0" prefWidth="172.0" text="Pēpē" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="months" layoutX="524.0" layoutY="196.0" mnemonicParsing="false" onAction="#quizMonths" prefHeight="73.0" prefWidth="172.0" text="Marama Native Words" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="work" layoutX="417.0" layoutY="363.0" mnemonicParsing="false" onAction="#quizWork" prefHeight="73.0" prefWidth="172.0" text="Mahi" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="428.0" layoutY="138.0" prefHeight="47.0" prefWidth="167.0" text="Marau" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <Button layoutX="108.0" layoutY="196.0" mnemonicParsing="false" onAction="#quizWeekdaysLoan" prefHeight="73.0" prefWidth="172.0" text="   Wiki     Loan Words" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="733.0" layoutY="196.0" mnemonicParsing="false" onAction="#quizMonthsLoan" prefHeight="73.0" prefWidth="172.0" text="  Marama Loan Words" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
